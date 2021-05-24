@@ -18,5 +18,8 @@ class Migration(migrations.Migration):
                 ('text', models.TextField()),
                 ('date_posted', models.DateTimeField(auto_now_add=True)),
             ],
+            options={
+                'verbose_name_plural': 'entries',
+            },
         ),
     ]
