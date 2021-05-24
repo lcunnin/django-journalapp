@@ -11,13 +11,15 @@
     <h1>What Am I Grateful For Today?</h1>
     </div>
     <div class="new-entry-container">
-        <div class="-new-entry-field">
-            <textarea class="textarea" placeholder="Today I am grateful for..."></textarea>
-            {{ form.text }}
-        </div>
-        <div class="new-entry-submit">
-            <button class="new-entry-button">Submit</button>
-        </div>
+        <form method="POST" action="{% url 'add' %}">
+            {% csrf_token %}
+            <div class="-new-entry-field">
+                {{ form.text }}
+            </div>
+            <div class="new-entry-submit">
+                <button class="new-entry-button">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
