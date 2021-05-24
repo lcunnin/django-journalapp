@@ -7,7 +7,21 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello, Django!</h1>
-    <a href="{% url 'add' %}">Add New Entry</a>
+    <div class="header-contianer">
+    <h1 class="title">My Gratitude Journal</h1>
+    </div>
+    <div class="new-entry-container">
+        <a href="{% url 'add' %}">Add New Entry</a>
+    </div>
+    
+    {% for entry in entries %}
+        <div class="recorded-entry-container">
+            <div class="recorded-content">
+                <h3>{{ entry.date_posted }}</h3>
+                <p>{{ entry.text }}</p>
+            </div>
+        </div>
+    {% endfor %}
+
 </body>
 </html>
