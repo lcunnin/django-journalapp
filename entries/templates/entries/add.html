@@ -7,6 +7,17 @@
     <title>New Journal Entry</title>
 </head>
 <body>
-    <h1>New Entry Here</h1>
+    <div class="new-entry-title">
+    <h1>What Am I Grateful For Today?</h1>
+    </div>
+    <div class="new-entry-container">
+        <div class="-new-entry-field">
+            <textarea class="textarea" placeholder="Today I am grateful for..."></textarea>
+            {{ form.text }}
+        </div>
+        <div class="new-entry-submit">
+            <button class="new-entry-button">Submit</button>
+        </div>
+    </div>
 </body>
 </html>
