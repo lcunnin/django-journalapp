@@ -4,5 +4,5 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'entries/home.html')
 
-def entries(request):
+def add(request):
     return render(request, 'entries/add.html')
