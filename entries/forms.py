@@ -5,3 +5,7 @@ class EntryForm(ModelForm):
     class Meta:
         model = Entry
         fields = ('text', )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['text'].widgets.attrs.update({'class' : 'textarea', 'placeholder' : 'Today I am grateful for...'})
