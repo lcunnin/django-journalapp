@@ -10,7 +10,7 @@ def index(request):
 
     return render(request, 'entries/home.html', context)
 
-def add(request):
+def new(request):
     if request.method == 'POST':
         form = EntryForm(request.POST)
 
@@ -23,4 +23,4 @@ def add(request):
 
     context = {'form' : form}
     
-    return render(request, 'entries/add.html', context)
+    return render(request, 'entries/new.html', context)
