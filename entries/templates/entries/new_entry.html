@@ -11,7 +11,7 @@
     <h1>What Am I Grateful For Today?</h1>
     </div>
     <div class="new-entry-container">
-        <form method="post" action="{% url 'add' %}">
+        <form method="post" action="{% url 'new_entry' %}">
             {% csrf_token %}
             <div class="-new-entry-field">
                 {{ form.text }}
