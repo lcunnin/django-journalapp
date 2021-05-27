@@ -14,6 +14,7 @@
         <form method="post" action="{% url 'new_entry' %}">
             {% csrf_token %}
             <div class="-new-entry-field">
+                {{ form.date_posted }}
                 {{ form.text }}
             </div>
             <div class="new-entry-submit">
