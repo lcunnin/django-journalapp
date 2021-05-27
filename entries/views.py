@@ -6,7 +6,7 @@ from .forms import EntryForm
 def index(request):
     entries = Entry.objects.order_by('-date_posted')
 
-    context = {'entires' : entries}
+    context = {'entries' : entries}
 
     return render(request, 'entries/home.html', context)
 
