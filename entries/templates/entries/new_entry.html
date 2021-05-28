@@ -7,6 +7,13 @@
     <title>New Journal Entry</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'new_entry' %}">New Entry</a></li>
+            <li><a href="{% url 'admin:index' %}">Admin</a></li>
+        </ul>
+    </nav>
     <div class="new-entry-title">
     <h1>What Am I Grateful For Today?</h1>
     </div>
