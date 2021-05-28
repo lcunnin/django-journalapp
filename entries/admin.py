@@ -3,6 +3,6 @@ from .models import Entry
 
 class EntryAdmin(admin.ModelAdmin):
 
-    list_display = ('title', 'text', 'date_posted')
+    list_display = ('title', 'text', )
 
 admin.site.register(Entry, EntryAdmin)
