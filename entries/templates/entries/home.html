@@ -17,14 +17,8 @@
     <div class="header-contianer">
     <h1 class="title">Gratitude Journal</h1>
     </div>
-    
-    {% for entry in entries %}
-        <div class="recorded-entry-container">
-                <h3>{{ entry.title }}</h3>
-                <p>{{ entry.date_posted }}</p>
-                <p>{{ entry.text }}</p>
-        </div>
-    {% endfor %}
-
+    <div class="new-entry-link">
+        <a href="{% url 'new_entry' %}">Add New Entry Here</a>
+    </div>
 </body>
 </html>

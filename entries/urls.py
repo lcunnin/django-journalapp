@@ -20,4 +20,5 @@ from . import views
 urlpatterns = [
     path('', views.index, name="index"),
     path('new_entry/', views.new_entry, name="new_entry"),
+    path('old_entries/', views.old_entries, name="old_entries"),
 ]

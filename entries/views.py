@@ -4,11 +4,8 @@ from .forms import EntryForm
 
 # Create your views here.
 def index(request):
-    entries = Entry.objects.order_by('-date_posted')
 
-    context = {'entries' : entries}
-
-    return render(request, 'entries/home.html', context)
+    return render(request, 'entries/home.html')
 
 def new_entry(request):
     if request.method == 'POST':
@@ -23,4 +20,11 @@ def new_entry(request):
 
     context = {'form' : form}
     
-    return render(request, 'entries/new_entry.html', context)
+    return render(request, 'entries/old_entries.html', context),
+
+def old_entries(request):
+    entries = Entry.objects.order_by('-date_posted')
+
+    context = {'entries' : entries}
+
+    return render(request, 'entries/old_entries.html', context)
