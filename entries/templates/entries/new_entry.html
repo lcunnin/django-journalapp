@@ -11,14 +11,15 @@
         <ul>
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'new_entry' %}">New Entry</a></li>
+            <li><a href="{% url 'old_entries' %}">Past Entries</a></li>
             <li><a href="{% url 'admin:index' %}">Admin</a></li>
         </ul>
     </nav>
     <div class="header-contianer">
-    <h1 class="title">Gratitude Journal</h1>
+    <h1 class="title">{{ page_heading }}</h1>
     </div>
     <div class="new-entry-title">
-    <h1>What Am I Grateful?</h1>
+    <h1>What Am I Grateful For?</h1>
     </div>
     <div class="new-entry-container">
         <form method="POST" action="{% url 'new_entry' %}">

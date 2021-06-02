@@ -5,7 +5,9 @@ from .forms import EntryForm
 # Create your views here.
 def index(request):
 
-    return render(request, 'entries/home.html')
+    context = {'page_heading':'Gratitude Journal'}
+
+    return render(request, 'entries/home.html', context)
 
 def new_entry(request):
     if request.method == 'POST':
@@ -18,13 +20,16 @@ def new_entry(request):
 
         form = EntryForm()
 
-    context = {'form' : form}
+    context = {
+        'form' : form,
+        'page_heading':'Gratitude Journal'}
     
     return render(request, 'entries/new_entry.html', context)
 
 def old_entries(request):
     entries = Entry.objects.order_by('-date_posted')
 
-    context = {'entries' : entries}
+    context = {'entries' : entries,
+        'page_heading':'Gratitude Journal'}
 
     return render(request, 'entries/old_entries.html', context)
