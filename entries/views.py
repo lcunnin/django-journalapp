@@ -20,7 +20,7 @@ def new_entry(request):
 
     context = {'form' : form}
     
-    return render(request, 'entries/old_entries.html', context),
+    return render(request, 'entries/new_entry.html', context)
 
 def old_entries(request):
     entries = Entry.objects.order_by('-date_posted')
