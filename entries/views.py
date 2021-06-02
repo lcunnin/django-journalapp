@@ -15,7 +15,7 @@ def new_entry(request):
 
         if form.is_valid():
             form.save()
-            return redirect('')
+            return redirect('entries/old_entries.html')
     else:
 
         form = EntryForm()
@@ -24,7 +24,7 @@ def new_entry(request):
         'form' : form,
         'page_heading':'New Journal Entry'}
     
-    return render(request, 'entries/new_entry.html', context)
+    return render(request, '', context)
 
 def old_entries(request):
     entries = Entry.objects.order_by('-date_posted')
