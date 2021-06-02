@@ -30,6 +30,6 @@ def old_entries(request):
     entries = Entry.objects.order_by('-date_posted')
 
     context = {'entries' : entries,
-        'page_heading':'Journal Entries'}
+        'page_heading':'My Journal Entries'}
 
     return render(request, 'entries/old_entries.html', context)
