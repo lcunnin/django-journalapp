@@ -22,7 +22,7 @@ def new_entry(request):
 
     context = {
         'form' : form,
-        'page_heading':'Gratitude Journal'}
+        'page_heading':'New Journal Entry'}
     
     return render(request, 'entries/new_entry.html', context)
 
@@ -30,6 +30,6 @@ def old_entries(request):
     entries = Entry.objects.order_by('-date_posted')
 
     context = {'entries' : entries,
-        'page_heading':'Gratitude Journal'}
+        'page_heading':'Journal Entries'}
 
     return render(request, 'entries/old_entries.html', context)
