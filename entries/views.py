@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect
 from .models import Entry
 from .forms import EntryForm
 
-# Create your views here.
+#Referred to https://www.youtube.com/watch?v=YkpEtE_x6xk
+
 def index(request):
 
     context = {'page_heading':'Gratitude Journal'}
