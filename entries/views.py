@@ -6,7 +6,7 @@ from .forms import EntryForm
 
 def index(request):
 
-    context = {'page_heading':'Gratitude Journal'}
+    context = {'page_heading':'Write It Out'}
 
     return render(request, 'entries/home.html', context)
 

@@ -9,5 +9,5 @@ class EntryForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['title'].widget.attrs.update({'class': 'textarea', 'placeholder': 'Enter a title'})
-        self.fields['text'].widget.attrs.update({'class' : 'textarea', 'placeholder' : 'Today I am grateful for...'})
+        self.fields['text'].widget.attrs.update({'class' : 'textarea', 'placeholder' : ''})
         
