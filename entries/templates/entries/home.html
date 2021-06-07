@@ -1,13 +1,25 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
-    <div class="header-contianer">
-    <h1 class="title">{{ page_heading }}</h1>
-    <p class="journal-description">“Writing in a journal reminds you of your goals and of your learning in life. It offers a place where you can hold a deliberate, thoughtful conversation with yourself.” - Robin Sharma</p>
-    <button class="new-entry-link">
-        <a href="{% url 'new_entry' %}">Add New Entry Here</a>
-    </button>
-    </div>
+    {% if request.user.is_authenticated %}
+        <div class="header-contianer">
+        <h1 class="title">{{ page_heading }}</h1>
+        <p>
+            Welcome, {{request.user.username}}! 
+            (<a href="{% url 'admin:logout'%}">Logout</a>)
+        </p>
+        <button class="new-entry-link">
+            <a href="{% url 'new_entry' %}">Add New Entry Here</a>
+        </button>
+        </div>
+        <p>{{ request.session.location }}</p>
+    {% else %}
+        <div class="header-contianer">
+        <h1 class="title">{{ page_heading }}</h1>
+        <p class="journal-description">“Writing in a journal reminds you of your goals and of your learning in life. It offers a place where you can hold a deliberate, thoughtful conversation with yourself.” - Robin Sharma</p>
+        </div>
+    {% endif %}
 
 {% endblock %}
