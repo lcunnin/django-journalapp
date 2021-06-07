@@ -1,0 +1,50 @@
+h1, h3 {
+    font-family: 'Lobster Two', cursive;
+}
+
+h1 {
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 26pt;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 70px;
+    background: url('{% static "img/marjan-blan-paper-unsplash.jpeg"%}') 50% 0 no-repeat fixed;
+}
+
+.header-container {
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.new-entry-title {
+    background-color: #C25100;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.new-entry-container form {
+    display: flex;
+    justify-content: center;
+}
+
+.button,
+.button:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.button:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
+}
