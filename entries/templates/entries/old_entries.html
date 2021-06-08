@@ -7,9 +7,9 @@
     <h1 class="title">{{ page_heading }}</h1>
     </div>
     
-    {% for entry in entries %}>
+    {% for entry in entries %}
+        <div class="recorded-entry-container"></div>
             <h3 class="recorded-entry-title">{{ entry.title }}</h3>
-        <div class="recorded-entry-container">
             <p>{{ entry.date_posted }}</p>
             <p>{{ entry.text }}</p>
         </div>

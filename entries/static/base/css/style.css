@@ -45,9 +45,8 @@ body {
 
 .recorded-entry-container {
     padding: 20px 20px 20px 40px;
-    font-size: 25pt;
 }    
 
-.recorded-entry-title {
-    margin: 20px auto;
+.recorded-entry-container p {
+    font-size: 3em;
 }
