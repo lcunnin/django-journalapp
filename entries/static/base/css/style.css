@@ -3,29 +3,29 @@ h1, h3 {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 5em;
     text-decoration: none;
     color: black;
 }
 
 h3 {
-    font-size: 4em;
+    font-size: 3.5em;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 70px;
     background: url(../img/marjan-blan-paper-unsplash.jpg) no-repeat top center fixed;
     background-size: 100% auto;
 }
 
 .header-container {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 20px 20px 20px 40px;
 }
+
 
 .new-entry-title {
     margin-top: 0;
@@ -41,8 +41,4 @@ body {
 .recorded-entry-container {
     padding: 20px 20px 20px 40px;
 }    
-
-.recorded-entry-container p {
-    font-size: 3em;
-}
 

@@ -5,11 +5,10 @@
 
     {% if request.user.is_authenticated %}
         <div class="header-container">
-        <h1 class="title">{{ page_heading }}</h1>
-        </div>
+        <h1 class="home-title">{{ page_heading }}</h1>
         <div class="home-container">
         <p>
-            Welcome, {{request.user.username}}! 
+            Welcome back, {{request.user.username}}! 
             (<a href="{% url 'admin:logout'%}">Logout</a>)
         </p>
         <button class="new-entry-link">
