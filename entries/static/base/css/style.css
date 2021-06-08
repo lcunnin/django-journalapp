@@ -43,31 +43,30 @@ body {
 }
 
 .home-container {
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
 }
 
 .journal-description {
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
+    font-size: 20pt;
 }
 
 .new-entry-field {
     padding: 0px 20px 20px 40px;
 }
 
-.button {
-   background-color: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
-   margin-left: 20px;
-   font-size: 15pt;
-}
-
-.button:hover { 
-    background-position: right center;
-}
-
 .old-entry-container {
-    padding: 0px 20px 20px 40px;
+    padding: 0px 20px 20px 20px;
     font-size: 15pt;
-    
 }    
 
-
+.button {
+    background-color: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+    margin-left: 20px;
+    font-size: 15pt;
+    text-decoration: none;
+ }
+ 
+ .button:hover { 
+     background-position: right center;
+ }
