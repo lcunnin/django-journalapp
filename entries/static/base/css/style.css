@@ -1,4 +1,4 @@
-h1, h3 {
+h1, h4 {
     font-family: 'Lobster Two', cursive;
 }
 
@@ -8,8 +8,8 @@ h1 {
     color: black;
 }
 
-h3 {
-    font-size: 3.5em;
+h4 {
+    font-size: 2em;
     text-decoration: none;
     margin-bottom: 15px;
 }
@@ -22,10 +22,9 @@ body {
 
 .header-container {
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 20px 20px 20px 40px;
 }
-
 
 .new-entry-title {
     margin-top: 0;
@@ -33,12 +32,17 @@ body {
     padding: 20px 20px 20px 40px;
 }
 
+.new-entry-field {
+    padding: 0px 20px 20px 40px;
+}
+
 .new-entry-submit {
     margin-left: 20px;
     font-size: 15pt;
 }
 
-.recorded-entry-container {
-    padding: 20px 20px 20px 40px;
+.old-entry-container {
+    padding: 0px 20px 20px 40px;
+    font-size: 15pt;
 }    
 

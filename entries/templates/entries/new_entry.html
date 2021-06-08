@@ -5,7 +5,7 @@
     <h1>What's On Your Mind?</h1>
     </div>
     <div class="new-entry-container">
-        <form class="-new-entry-field" action="{% url 'new_entry' %}" method="POST">
+        <form class="new-entry-field" action="{% url 'new_entry' %}" method="POST">
             {% csrf_token %}
             <div class="row m-3">
                 {{ form.title }}
