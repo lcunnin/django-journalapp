@@ -5,7 +5,8 @@
 
     {% if request.user.is_authenticated %}
         <div class="header-container">
-        <h1 class="home-title">{{ page_heading }}</h1>
+        <h1>{{ page_heading }}</h1>
+        </div>
         <div class="home-container">
         <p>
             Welcome back, {{request.user.username}}! 
@@ -18,11 +19,13 @@
         <p>{{ request.session.location }}</p>
     {% else %}
         <div class="header-container">
-        <h1 class="home-title">{{ page_heading }}</h1>
-        <p class="journal-description">“Writing in a journal reminds you of your goals and of your learning in life. It offers a place where you can hold a deliberate, thoughtful conversation with yourself.” - Robin Sharma</p>
-        <button class="get-started-link">
-            <a href="#">Get Started</a>
-        </button>
+            <h1>{{ page_heading }}</h1>
+        </div>
+        <div class="journal-description">
+            <p>“Writing in a journal reminds you of your goals and of your learning in life. It offers a place where you can hold a deliberate, thoughtful conversation with yourself.” - Robin Sharma</p>
+            <button class="get-started-link">
+                <a href="#">Get Started</a>
+            </button>
         </div>
     {% endif %}
 
