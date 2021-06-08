@@ -9,7 +9,9 @@
     
     {% for entry in entries %}
         <div class="recorded-entry-container"></div>
-            <h3 class="recorded-entry-title">{{ entry.title }}</h3>
+            <h3 class="recorded-entry-title">
+                <strong>{{ entry.title }}</strong>
+            </h3>
             <p>{{ entry.date_posted }}</p>
             <p>{{ entry.text }}</p>
         </div>

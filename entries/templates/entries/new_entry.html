@@ -5,14 +5,16 @@
     <h1>What's On Your Mind?</h1>
     </div>
     <div class="new-entry-container">
-        <form method="POST" action="{% url 'new_entry' %}">
+        <form class="-new-entry-field" action="{% url 'new_entry' %}" method="POST">
             {% csrf_token %}
-            <div class="-new-entry-field">
+            <div class="row m-3">
                 {{ form.title }}
+            </div>
+            <div class="row m-3">
                 {{ form.text }}
             </div>
             <div class="new-entry-submit">
-                <button class="new-entry-button">Submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
     </div>

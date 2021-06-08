@@ -9,7 +9,7 @@ h1 {
 }
 
 h3 {
-    font-size: 4.5em;
+    font-size: 4em;
     text-decoration: none;
     margin-bottom: 20px;
 }
@@ -27,20 +27,15 @@ body {
     padding: 20px 20px 20px 40px;
 }
 
-.home-container {
-    display: flex;
-    justify-content: center;   
-}
-
 .new-entry-title {
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
 
-.new-entry-container form {
-    display: flex;
-    justify-content: center;
+.new-entry-submit {
+    margin-left: 20px;
+    font-size: 15pt;
 }
 
 .recorded-entry-container {
@@ -50,3 +45,4 @@ body {
 .recorded-entry-container p {
     font-size: 3em;
 }
+
