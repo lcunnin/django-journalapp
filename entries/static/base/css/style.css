@@ -16,16 +16,18 @@ html {
 
 h1, h4 {
     font-family: 'Lobster Two', cursive;
+    margin-top: 20px;
+    padding: 20px 20px 20px 40px;
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 5rem;
     text-decoration: none;
     color: black;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 2rem;
     text-decoration: none;
     margin-bottom: 15px;
 }
@@ -36,37 +38,53 @@ body {
     background-size: 100% auto;
 }
 
-.header-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.welcome-container {
     padding: 20px 20px 20px 40px;
+    font-size: 2em;
 }
+
+.get-started-link, .new-entry-link button{
+    margin-top: 15px;
+    padding: 20px 20px 20px 20px;
+    font-size: 20pt;
+    text-decoration: none;
+}
+
 
 .home-container {
     padding: 20px 20px 20px 20px;
 }
 
 .journal-description {
+    margin-left: 20px;
     padding: 20px 20px 20px 20px;
     font-size: 20pt;
 }
 
+.get-started-link button {
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: 15pt;
+}
+
 .new-entry-field {
-    padding: 0px 20px 20px 40px;
+    padding: 20px 20px 20px 40px;
 }
 
 .old-entry-container {
-    padding: 0px 20px 20px 20px;
+    padding: 20px 10px 20px 10px;
     font-size: 15pt;
 }    
 
-.button {
-    background-color: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
-    margin-left: 20px;
-    font-size: 15pt;
+.logout {
+    margin-top: 20px;
+    padding: 20px 20px 20px 40px;
+}
+
+.login-again {
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 20px 10px 20px 10px;
+    font-size: 3rem;
     text-decoration: none;
- }
- 
- .button:hover { 
-     background-position: right center;
- }
+}

@@ -4,8 +4,10 @@
 {% block content %}
 
 {% block body %}
-    <h2>You have been logged out</h2>
-      <a href="{% url 'login' %}">Log In Again?</a>
+  <div class="logout">
+    <h1>You have logged out</h1>
+      <a class="login-again" href="{% url 'login' %}">Log In Again?</a>
+    </div>
 {% endblock body %}
 
 {% endblock %}
