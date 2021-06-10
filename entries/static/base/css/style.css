@@ -42,15 +42,6 @@ body {
     padding: 20px 20px 20px 40px;
     font-size: 2em;
 }
-
-.get-started-link, .new-entry-link button{
-    margin-top: 15px;
-    padding: 20px 20px 20px 20px;
-    font-size: 20pt;
-    text-decoration: none;
-}
-
-
 .home-container {
     padding: 20px 20px 20px 20px;
 }
@@ -61,12 +52,6 @@ body {
     font-size: 20pt;
 }
 
-.get-started-link button {
-    margin-top: 20px;
-    padding: 5px 10px 5px 10px;
-    font-size: 15pt;
-}
-
 .new-entry-field {
     padding: 20px 20px 20px 40px;
 }
@@ -75,16 +60,3 @@ body {
     padding: 20px 10px 20px 10px;
     font-size: 15pt;
 }    
-
-.logout {
-    margin-top: 20px;
-    padding: 20px 20px 20px 40px;
-}
-
-.login-again {
-    margin-top: 50px;
-    margin-left: 30px;
-    padding: 20px 10px 20px 10px;
-    font-size: 3rem;
-    text-decoration: none;
-}

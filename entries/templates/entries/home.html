@@ -9,14 +9,10 @@
         <div class="welcome-container">
         <p>
             Welcome back, {{request.user.username}}! 
-            (<a href="{% url 'admin:logout'%}">Logout</a>)
+            (<a href="{% url 'logout'%}">Logout</a>)
         </p>
-        <div class="new-entry-link">
-            <button>
-            <a href="{% url 'new_entry' %}">Add New Entry</a>
-            </button>
-            <p>{{ request.session.location }}</p>
-        </div>
+        <a href="{% url 'new_entry' %}">Add New Entry</a>
+        <p>{{ request.session.location }}</p>
         </div>
     {% else %}
         <div class="header-container">
@@ -24,9 +20,7 @@
         </div>
         <div class="journal-description">
             <p>“Writing in a journal reminds you of your goals and of your learning in life. It offers a place where you can hold a deliberate, thoughtful conversation with yourself.” - Robin Sharma</p>
-            <button class="get-started-link">
                 <a href="{% url 'login' %}">Sign In</a>
-            </button>
         </div>
     {% endif %}
 
