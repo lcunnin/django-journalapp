@@ -4,10 +4,16 @@ from django.contrib.auth.forms import UserCreationForm
 from django.forms import ModelForm
 from .models import Entry
 
-class UserRegistrationForm(UserCreationForm):
+class UserRegistration(UserCreationForm):
     class Meta:
         model=User
         fields=['username','password1','password2']
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        username = forms.CharField(max_length=30, required=True)
+        password1 = forms.CharField(max_length=30, required=True)
+        password2 = forms.CharField(max_length=30, required=True)
 
 class EntryForm(ModelForm):
     class Meta:

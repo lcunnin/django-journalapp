@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
-from django.contrib import messages
-from .forms import UserCreationForm
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
 from .models import Entry
 from .forms import EntryForm
-from django.contrib.auth.decorators import login_required
+
 
 #https://medium.com/swlh/authenticating-users-in-django-user-registration-880e11e39696
 
@@ -13,7 +14,10 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Account created for {username}!')
+            raw_password = form.cleaned_data.get('password1')
+            raw_password = form.cleaned_data.get('password2')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
             return redirect('entries/home.html')
     else:
         form = UserCreationForm()

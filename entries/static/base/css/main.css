@@ -40,10 +40,15 @@ body {
 
 .welcome-container {
     padding: 20px 20px 20px 40px;
-    font-size: 2em;
+    font-size: 2rem;
 }
 .home-container {
     padding: 20px 20px 20px 20px;
+}
+
+.form-container {
+    padding: 20px 20px 20px 20px;
+    font-size: 20pt;
 }
 
 .journal-description {
@@ -60,3 +65,5 @@ body {
     padding: 20px 10px 20px 10px;
     font-size: 15pt;
 }    
+
+
