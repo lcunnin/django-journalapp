@@ -20,7 +20,11 @@
         </div>
         <div class="journal-description">
             <p>“Writing in a journal reminds you of your goals and of your learning in life. It offers a place where you can hold a deliberate, thoughtful conversation with yourself.” - Robin Sharma</p>
-                <a href="{% url 'login' %}">Sign In</a>
+        </div>
+        <div class="home-button">
+            <form method="GET" action="{% url 'login'%}">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
         </div>
     {% endif %}
 

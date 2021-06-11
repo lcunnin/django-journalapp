@@ -7,10 +7,10 @@
     </div>
     
     {% for entry in entries %}
+        <h4 class="old-entry-title">
+            <strong>{{ entry.title }}</strong>
+        </h4>
         <div class="old-entry-container">
-            <h4>
-                <strong>{{ entry.title }}</strong>
-            </h4>
             <p>{{ entry.date_posted }}</p>
             <p>{{ entry.text }}</p>
         </div>
