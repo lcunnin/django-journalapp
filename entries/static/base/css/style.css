@@ -27,9 +27,13 @@ h1 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 4rem;
     text-decoration: none;
     margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -40,21 +44,37 @@ body {
 
 .welcome-container {
     padding: 20px 20px 20px 40px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .home-container {
     padding: 20px 20px 20px 20px;
 }
 
 .form-container {
+    margin-left: 20px;
     padding: 20px 20px 20px 20px;
     font-size: 20pt;
+}
+
+.form-container button {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.register-container {
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.register-container button {
+    margin-top: 15px;
+    font-size: 10px;
 }
 
 .journal-description {
     margin-left: 20px;
     padding: 20px 20px 20px 20px;
-    font-size: 20pt;
+    font-size: 25pt;
 }
 
 .new-entry-field {
@@ -63,7 +83,7 @@ body {
 
 .old-entry-container {
     padding: 20px 10px 20px 10px;
-    font-size: 15pt;
+    font-size: 20pt;
 }    
 
 

@@ -3,7 +3,6 @@
 {% block content %}
 <h1>Log In</h1>
 <div class="form-container">
-
 <form method="post">
     {% csrf_token %}
     {% for field in form %}
@@ -14,13 +13,12 @@
             {{ field }}
         </p>
     {% endfor %}
-    <p>
-        <button type="submit" class="btn btn-primary">Log In</button>
-    </p>
-        <div class="form-group row m-5">
+        <p>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </p>
+        <div>
             Need An Account? <a href="{%url 'register'%}">Sign Up</a>
         </div>
-    </div>
 </form>
 </div>
 {% endblock %}
