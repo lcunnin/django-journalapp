@@ -39,10 +39,7 @@ def new_entry(request):
         if form.is_valid():
             form.save()
 
-            users = new_entry.objects.filter(user=request.user)
-            request.user.new_spending.add()
-
-            return redirect('old_entries', { 'users': users})
+            return redirect('old_entries')
     else:
 
         form = EntryForm()
