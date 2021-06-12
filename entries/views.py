@@ -37,6 +37,7 @@ def new_entry(request):
         form = EntryForm(request.POST)
 
         if form.is_valid():
+            form.instance.user = request.user
             form.save()
 
             return redirect('old_entries')
@@ -52,7 +53,7 @@ def new_entry(request):
 
 @login_required
 def old_entries(request):
-    entries = Entry.objects.order_by('-date_posted')
+    entries = Entry.objects.filter(user=request.user)
 
     context = {'entries' : entries,
         'page_heading':'My Journal Entries'}
