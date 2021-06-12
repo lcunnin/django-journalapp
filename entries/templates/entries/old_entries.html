@@ -7,12 +7,16 @@
     </div>
     
     {% for entry in entries %}
+        <div class="old-entry-container">
         <h4 class="old-entry-title">
             <strong>{{ entry.title }}</strong>
         </h4>
-        <div class="old-entry-container">
+        <div class="date-posted">
             <p>{{ entry.date_posted }}</p>
+        </div>
+        <div class="entry-text">
             <p>{{ entry.text }}</p>
+        </div>
         </div>
     {% endfor %}
 

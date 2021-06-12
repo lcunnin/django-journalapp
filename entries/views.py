@@ -7,6 +7,7 @@ from .forms import EntryForm
 
 
 #https://medium.com/swlh/authenticating-users-in-django-user-registration-880e11e39696
+#https://stackoverflow.com/questions/65484009/integrityerror-at-new-entry-3-not-null-constraint-failed-learning-logs-entry
 
 def register(request):
     if request.method == 'POST':
