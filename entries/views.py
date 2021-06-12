@@ -18,7 +18,7 @@ def register(request):
             raw_password = form.cleaned_data.get('password2')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('entries/home.html')
+            return redirect('new_entry.html')
     else:
         form = UserCreationForm()
     return render(request, 'users/register.html', {'form': form})
@@ -38,7 +38,11 @@ def new_entry(request):
 
         if form.is_valid():
             form.save()
-            return redirect('old_entries')
+
+            users = new_entry.objects.filter(user=request.user)
+            request.user.new_spending.add()
+
+            return redirect('old_entries', { 'users': users})
     else:
 
         form = EntryForm()
