@@ -15,9 +15,10 @@
             <p>{{ entry.date_posted }}</p>
         </div>
         <div class="entry-text">
-            <p>{{ entry.text }}</p>
+            <p>{{ entry.text|linebreaks }}</p>
         </div>
         </div>
+        required />
     {% endfor %}
 
 {% endblock %}

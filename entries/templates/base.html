@@ -27,7 +27,6 @@
                 <a class="nav-link {% if request.resolver_match.view_name == 'index' %}active{% endif %}" aria-current="page" href="{% url 'index' %}">Home</a>
                 <a class="nav-link {% if request.resolver_match.view_name == 'new_entry' %}active{% endif %}" href="{% url 'new_entry' %}">New Entry</a>                    
                 <a class="nav-link {% if request.resolver_match.view_name == 'old_entries' %}active{% endif %}" href="{% url 'old_entries' %}">Old Entries</a>
-                <a class="nav-link {% if request.resolver_match.view_name == 'admin:index' %}active{% endif %}" href="{% url 'admin:index' %}">Admin</a>
             </div>
           </div>
         </div>

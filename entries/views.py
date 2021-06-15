@@ -54,7 +54,7 @@ def new_entry(request):
 
 @login_required
 def old_entries(request):
-    entries = Entry.objects.filter(user=request.user)
+    entries = Entry.objects.filter(user=request.user).order_by('-date_posted')
 
     context = {'entries' : entries,
         'page_heading':'My Journal Entries'}
